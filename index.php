@@ -7,49 +7,54 @@
 </head>
 <body>
     <?php get_header(); ?>
-    <main><div class="container">
-    <?php 
+    <div class="container">
+
+      <main>
+        <?php 
     if( have_posts() ):
-        while( have_posts() ): 
-            the_post();
-
-            print('<article class="post">');
-            
-            printf( 
-                '<a href="%s"><h3>%s</h3></a>',
-                get_the_permalink(),
-                get_the_title()
-            );
-            
-            printf( 
-                '<div class="meta">Created By %s on %s.</div>',
-                get_the_author(),
-                get_the_time('F j, Y g:i a')
-            );
-
-            if( has_post_thumbnail() ) :
-                printf(
-                    '<div class="post-thumbnail">%s</div>',
-                    get_the_post_thumbnail()
-                );
-            endif;
-
-            the_excerpt();
-            
-            printf(
-                '<a class="button" href="%s">Read more</a>',
-                get_the_permalink()
-            );
-            
-            print('</article>');
-        endwhile;
+      while( have_posts() ): 
+        the_post();
+        
+        print('<article class="post">');
+        
+        printf( 
+          '<a href="%s"><h3>%s</h3></a>',
+          get_the_permalink(),
+          get_the_title()
+        );
+        
+        printf( 
+          '<div class="meta">Created By %s on %s.</div>',
+          get_the_author(),
+          get_the_time('F j, Y g:i a')
+        );
+        
+        if( has_post_thumbnail() ) :
+          printf(
+            '<div class="post-thumbnail">%s</div>',
+            get_the_post_thumbnail()
+          );
+        endif;
+        
+        the_excerpt();
+        
+        printf(
+          '<a class="button" href="%s">Read more</a>',
+          get_the_permalink()
+        );
+        
+        print('</article>');
+      endwhile;
     else:
-        echo wp_autop('Sorry No Posts were found.'); 
+      echo wp_autop('Sorry No Posts were found.'); 
     endif; ?>
-    </div></main>
-    <?php
+  </main>
+  <div class="sidebar">TEST</div>
+  <div class="clr"></div>
+  </div>
+  <?php
         get_footer();
         wp_footer();
-    ?>
+        ?>
 </body>
 </html>

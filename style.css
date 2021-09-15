@@ -41,8 +41,10 @@ a{
     color:#333;
 }
 
-main{
-    margin:15px 0;
+main {
+  margin:15px 0;
+  float:left;
+  width:68%;
 }
 
 body{
@@ -91,9 +93,18 @@ header h1{
 }
 
 footer{
-    background: #393939;
+    background:#393939;
     color:#fff;
     padding:10px 10px;
-    text-align: center;
+    text-align:center;
+}
+
+.clr{
+    clear:both;
+}
+
+.sidebar{
+    float:right;
+    width:28%;
 }
 
