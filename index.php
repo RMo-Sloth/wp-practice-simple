@@ -49,9 +49,6 @@
       echo wp_autop('Sorry No Posts were found.'); 
     endif; ?>
   </main>
-  <div class="sidebar">TEST</div>
-  <div class="clr"></div>
-  </div>
   <?php
         get_footer();
         wp_footer();

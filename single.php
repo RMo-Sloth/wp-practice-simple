@@ -7,7 +7,7 @@
 </head>
 <body>
     <?php get_header(); ?>
-    <main><div class="container">
+    <div class="container"><main>
     <?php 
     if( have_posts() ):
         while( have_posts() ): 
@@ -40,7 +40,7 @@
     else:
         echo wp_autop('Sorry No Posts were found.'); 
     endif; ?>
-    </div></main>
+    </main>
     <?php
         get_footer();
         wp_footer();
