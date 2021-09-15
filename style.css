@@ -17,6 +17,12 @@ article.post{
     overflow:hidden;
 }
 
+.meta{
+    background:#333;
+    color:#fff;
+    padding:5px;
+}
+
 article.post a.button{
     display:inline-block;
     background:#333;
