@@ -32,6 +32,11 @@ article.post a.button{
     text-decoration: none;
 }
 
+.post-thumbnail img{
+    width:100%;
+    height:auto;
+}
+
 a{
     color:#333;
 }
