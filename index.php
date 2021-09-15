@@ -16,11 +16,15 @@
         while( have_posts() ): 
             the_post();
             the_title('<h3>', '</h3>');
-            the_content();
-        endwhile;
+        ?>
+            <div class="meta">Created By <?php the_author(); ?> on <?php the_time('F j, Y g:i a'); ?>.</div>
+        <?php endwhile;
     else:
         echo wp_autop('Sorry No Posts were found.'); 
     endif; ?>
     </main>
+    <footer>
+        <p>&copy; <?php the_date('Y'); ?> - <?php bloginfo('name'); ?></p>
+    </footer>
 </body>
 </html>
