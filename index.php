@@ -6,11 +6,8 @@
     <title><?php bloginfo( 'name' ); ?></title>
 </head>
 <body>
-    <header>
-        <h1><?php bloginfo('name'); ?></h1>
-        <span><?php bloginfo('description'); ?></span>
-    </header>
-    <main>        
+    <?php get_header(); ?>
+    <main><div class="container">
     <?php 
     if( have_posts() ):
         while( have_posts() ): 
@@ -25,9 +22,10 @@
     else:
         echo wp_autop('Sorry No Posts were found.'); 
     endif; ?>
-    </main>
-    <footer>
-        <p>&copy; <?php the_date('Y'); ?> - <?php bloginfo('name'); ?></p>
-    </footer>
+    </div></main>
+    <?php
+        get_footer(); 
+        wp_footer(); 
+    ?>
 </body>
 </html>
