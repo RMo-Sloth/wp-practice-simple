@@ -5,3 +5,7 @@
     Description: Very Simple Wordpress Theme
     Version: 1.0
 */
+
+body {
+    background: #000;
+}
