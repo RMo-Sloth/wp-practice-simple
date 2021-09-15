@@ -23,6 +23,11 @@ article.post{
     padding:5px;
 }
 
+.meta a{
+    color:#fff;
+}
+
+
 article.post a.button{
     display:inline-block;
     background:#333;

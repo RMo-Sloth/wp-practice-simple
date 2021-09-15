@@ -41,7 +41,8 @@
         echo wp_autop('Sorry No Posts were found.'); 
     endif; ?>
     </main>
-    <?php
+    <?php 
+        comments_template(); 
         get_footer();
         wp_footer();
     ?>

@@ -24,7 +24,8 @@
         );
         
         printf( 
-          '<div class="meta">Created By %s on %s.</div>',
+          '<div class="meta">Created By <a href="%s">%s</a> on %s.</div>',
+          get_author_posts_url(get_the_author_meta('ID')),
           get_the_author(),
           get_the_time('F j, Y g:i a')
         );
