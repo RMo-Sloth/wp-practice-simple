@@ -12,6 +12,24 @@
     overflow: auto;
 }
 
+article.post{
+    border-bottom:1px #ccc solid;
+    overflow:hidden;
+}
+
+article.post a.button{
+    display:inline-block;
+    background:#333;
+    color:#fff;
+    padding:10px 5px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+a{
+    color:#333;
+}
+
 main{
     margin:15px 0;
 }
