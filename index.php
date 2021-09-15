@@ -6,5 +6,9 @@
     <title><?php bloginfo( 'name' ); ?></title>
 </head>
 <body>
+    <header>
+        <h1><?php bloginfo('name'); ?></h1>
+        <span><?php bloginfo('description'); ?></span>
+    </header>
 </body>
 </html>
